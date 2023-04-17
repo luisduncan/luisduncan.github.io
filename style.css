@@ -1,0 +1,846 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: "Segoe UI","Helvetica Neue","Helvetica",Arial,sans-serif;
+}
+header{
+     background-image: linear-gradient(rgba(5, 7, 12, 0.40),
+    rgba(5, 7, 12, 0.20)),
+    url('https://img.freepik.com/fotos-premium/tienda-joyas-diamantes-oro-anillos-collares-escaparate-escaparates-tiendas-minoristas-lujo_293060-6517.jpg?w=2000');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(173, 173, 173);
+    border-radius: 10px;
+}
+header{
+    width: 100%;
+    height: 50rem;
+}
+.barra-de-navegacion{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    font-size: 2rem;
+}
+.barra-de-navegacion .logo-menu{
+    display: none;
+}
+.list-items .items{
+    list-style: none;
+}
+.list-items .items li{
+    display: inline-block;
+    padding: 10px;
+}
+.list-items .items li a{
+    text-decoration: none;
+    color: white;
+}
+.list-items .items li a:hover{
+    color: rgb(202, 199, 199);
+}
+.barra-de-navegacion .secion{
+    padding: 10px;
+    border: 4px;
+}
+.barra-de-navegacion .title-logo{
+    display: none;
+}
+
+.barra-de-navegacion .secion a{
+    color: rgb(224, 228, 228);
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+.barra-de-navegacion .secion a:hover{
+    border-radius: 5px;
+    border: 1px solid #ece6ae;
+    color: aliceblue;
+}
+header .section-container{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-container .section-principal{
+    margin: auto;
+    width: 90rem;
+    text-align: center;
+}
+.section-principal h1{
+    font-weight: 500;
+    font-size: 3.5rem;
+    color: white;
+}
+
+.section-principal p{
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: rgb(190, 190, 190);
+}
+
+.section-principal a{
+    position: absolute;
+    left: calc(50% - 80px);
+    color: rgb(136, 133, 133);
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 20px;
+    background-color: rgb(247, 236, 199);
+    border-radius: 10px;
+}
+.section-principal a:hover{
+    box-shadow: 0px 1px 4px 0px rgb(252, 242, 212);
+    color: rgb(136, 133, 137);
+}
+/* .carrusel{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.carrusel .elemento{
+    flex: 1 0 auto;
+    margin: 0 50px;
+    background-color: #23bde4;
+    width: 500px;
+    height: 500px;
+} */
+main .section-imagen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    
+}
+main .title{
+    font-weight: 200;
+    font-size: 1.5rem;
+    width: 30rem;
+}
+main .title h2{
+    font-weight: 400;
+    color: rgb(173, 173, 173);
+}
+main .imagenes{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding: 30px;
+}
+
+.imagen{
+    flex: 1 0 auto;
+}
+.imagenes::-webkit-scrollbar{
+    display: none;
+
+}
+
+.imagenes .imagen1{
+    background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/orios_cadenas_para_mujer_570x.png?v=1673611195');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    margin: 0 20px;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 5px rgb(209, 207, 207);
+}
+
+.imagenes .imagen2{
+    background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/Dulce_encanto_accesorios_topos_aretes_para_mujer_570x.png?v=1673611593');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    margin: 0 20px;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 5px rgb(209, 207, 207);
+}
+.imagenes .imagen3{
+    background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/orios_pulseras_para_mujer_570x.png?v=1673611195');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    margin: 0 20px;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 5px rgb(209, 207, 207);
+}
+.imagenes .imagen4{
+    background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/Dulce_encanto_accesorios_tobilleras_para_mujer_570x.png?v=1673611195');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    margin: 0 20px;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 5px rgb(209, 207, 207);
+}
+.imagenes .imagen5{
+    background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/orios_manillas_para_mujer_307b17c9-ba20-4004-b615-22718fc0eac9_570x.png?v=1673611859');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 180px;
+    height: 180px;
+    margin: 0 20px;
+    border-radius: 50%;
+    box-shadow: 0 1px 10px 5px rgb(209, 207, 207);
+}
+.section-imagen .imagen1:hover{
+    width: 180px;
+    height: 180px;
+    background-image:  
+    url('https://images.pexels.com/photos/9649264/pexels-photo-9649264.jpeg?auto=compress&cs=tinysrgb&w=400');
+    transition: 1s;
+}
+.section-imagen .imagen2:hover{
+    width: 180px;
+    height: 180px;
+    background-image:
+    url('https://media.istockphoto.com/id/1300607159/es/foto/pendientes-dorados-con-piedra-preciosa-aislada-sobre-fondo-blanco.jpg?b=1&s=612x612&w=0&k=20&c=2Umq7-pFLiy-yGDrmD1Ql1o5LM0w0Xr8z8mOfAqsMCQ=');
+    transition: 1s;
+}
+.section-imagen .imagen3:hover{
+    width: 180px;
+    height: 180px;
+    background-image:
+    url('https://images.pexels.com/photos/885218/pexels-photo-885218.jpeg?auto=compress&cs=tinysrgb&w=400');
+    transition: 1s;
+}
+.section-imagen .imagen4:hover{
+    width: 180px;
+    height: 180px;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.40),
+    rgba(5, 7, 12, 0.40)),
+    url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/Dulce_encanto_accesorios_tobilleras_para_mujer_570x.png?v=1673611195');
+    transition: 1s;
+
+}
+.section-imagen .imagen5:hover{
+    width: 180px;
+    height: 180px;
+    background-image:
+    url('https://images.pexels.com/photos/266621/pexels-photo-266621.jpeg?auto=compress&cs=tinysrgb&w=400');
+    transition: 1s;
+}
+
+main .section-producto{
+    height: 50rem;
+}
+main .section-producto-title{
+    text-align: center;
+    padding: 30px;
+}
+main .section-producto-title h2{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+main .section-producto-title a{
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+main .section-producto-title a:hover{
+    color: #363535;
+}
+main .section-producto .slide{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.section-producto .slide .elemento{
+    flex: 0 0 auto;
+    margin: 0 15px;
+    width: 250px;
+    height: auto;
+
+}
+.section-producto .slide .elemento:hover{
+    box-shadow: 0px 1px 4px 0px #a8a8a8;
+}
+
+.slide .elemento img{
+    width: 100%;
+    height: 250px;
+}
+
+
+.slide .imagen .price{
+    padding: 10px 0;
+}
+
+.slide .imagen .price a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+.slide .imagen .price a:hover{
+    text-decoration: underline;
+}
+.slide .imagen .price .clasificacion .estrella{
+    color: rgb(224, 187, 21);
+}
+.slide .imagen .price p{
+    padding: 5px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+.slide::-webkit-scrollbar{
+    display: none;
+}
+/* .slide::-webkit-scrollbar-thumb{
+    background-color: rgb(226, 225, 225);
+    border-radius: 10px;
+} */
+main .imagen-regalo{
+    margin-top: 40px;
+}
+main .imagen-regalo .title-imagen{
+    text-align: center;
+    padding: 30px;
+    width: 100%;
+    background-color: #f0efef;
+}
+main .imagen-regalo .title-imagen h2{
+    font-weight: 400;
+    font-size: 3rem;
+}
+main .image-fondo{
+    width: 100%;
+    height: 40rem;
+}
+main .image-fondo{
+    background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/Custom_Block_Banners_Empaque_para_Regalo_marzo_1770x.jpg?v=1678967548');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+main .para-mujeres{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+main .para-mujeres .mujeres-container{
+    text-align: center;
+    width: 90%;
+}
+main .para-mujeres .mujeres-container h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+main .para-mujeres .mujeres-container .parrafo1 p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 2rem;
+}
+main .para-mujeres .mujeres-container .parrafo2 p{
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+main .para-mujeres .mujeres-container .buttom a{
+    position: absolute;
+    left: calc(50% - 140px);
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(24, 23, 21);
+    border-radius: 10px;
+}
+main .para-mujeres .mujeres-container .buttom a:hover{
+    background-color: white;
+    border: 1px solid #1f1f1f;
+    color: black;
+    transition: 1s;
+}
+main .imagen-descuento{
+    width: 100%;
+    height: 40rem;
+    margin-top: 7rem;
+}
+main .imagen-descuento{
+    background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/Custom_Block_Banners_dulce_encanto_accesorios-rebajas_mar9_1880x.jpg?v=1678359724');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+main .section-producto-pulseras{
+    height: 50rem;
+}
+main .producto-title{
+    text-align: center;
+    padding: 30px;
+}
+main .producto-title h2{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+main .producto-title a{
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+main .producto-title a:hover{
+    color: #363535;
+}
+main .section-producto-pulsera .slide{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.section-producto-pulsera .slide .elemento{
+    flex: 0 0 auto;
+    margin: 0 15px;
+    width: 250px;
+    height: auto;
+
+}
+.section-producto-pulsera .slide .elemento:hover{
+    box-shadow: 0px 1px 4px 0px #a8a8a8;
+}
+
+.section-producto-pulsera .slide .elemento img{
+    width: 100%;
+    height: 250px;
+}
+
+
+.section-producto-pulsera .slide .imagen .price{
+    padding: 10px 0;
+}
+
+.section-producto-pulsera .slide .imagen .price a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+.section-producto-pulsera .slide .imagen .price a:hover{
+    text-decoration: underline;
+}
+.section-producto-pulsera .slide .imagen .price .clasificacion .estrella{
+    color: rgb(224, 187, 21);
+}
+.section-producto-pulsera .slide .imagen .price p{
+    padding: 5px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+
+main .imagen-arete{
+    margin-top: 40px;
+    width: 100%;
+    height: 40rem;
+}
+main .imagen-arete{
+    background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/bn-ppl-desktop-dulce-encanto_2_marz19_1880x.jpg?v=1679233209');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+main .section-producto-aretes{
+    height: 50rem;
+}
+main .producto-title{
+    text-align: center;
+    padding: 30px;
+}
+main .producto-title h2{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+main .producto-title a{
+    display: inline-block;
+    color: black;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+main .producto-title a:hover{
+    color: #363535;
+}
+main .section-producto-aretes .slide{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+}
+.section-producto-aretes .slide .elemento{
+    flex: 0 0 auto;
+    margin: 0 15px;
+    width: 250px;
+    height: auto;
+
+}
+.section-producto-aretes .slide .elemento:hover{
+    box-shadow: 0px 1px 4px 0px #a8a8a8;
+}
+
+.section-producto-aretes .slide .elemento img{
+    width: 100%;
+    height: 250px;
+}
+
+
+.section-producto-aretes .slide .imagen .price{
+    padding: 10px 0;
+}
+
+.section-producto-aretes .slide .imagen .price a{
+    font-size: 1.7rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+.section-producto-aretes .slide .imagen .price a:hover{
+    text-decoration: underline;
+}
+.section-producto-aretes .slide .imagen .price .clasificacion .estrella{
+    color: rgb(224, 187, 21);
+}
+.section-producto-aretes .slide .imagen .price p{
+    padding: 5px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+
+main .entregas{
+    width: 100%;
+    margin: 50px 0px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+main .entregas .entrega{
+    width: 30%;
+    padding-left: 70px;
+    
+}
+main .entregas .entrega img{
+    width: 50px;
+}
+
+main .entregas .entrega h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    
+}
+.entregas .entrega p{
+    font-weight: 400;
+    font-size: 1.5rem;
+   margin-bottom: 10px;
+   color: #5c5b5b;
+
+}
+.entregas .entrega a{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #5c5b5b;
+}
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(34, 33, 33);
+}
+.footer-container{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-container .footer-left{
+    padding: 20px;
+}
+.footer-container .footer-left h2{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: white;
+}
+.footer-container .footer-left p{
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: white;
+}
+.footer-container .footer-left a{
+    color: rgb(95, 94, 94);
+    font-size: 1.2rem;
+
+}
+.footer-container .footer-right{
+    padding: 20px;
+}
+.footer-container .footer-right h2{
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: white;
+    font-size: 2rem;
+}
+.footer-right .formulario{
+    padding-top: 10px;
+
+}
+.footer-right .formulario .email{
+    width: 30rem;
+    height: 5rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.footer-right .formulario .email:hover{
+    background-color: #f5f0f0;
+    transition: 0.5s;
+
+}
+.footer-right .formulario .buttom{
+    width: 6rem;
+    height: 5rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #ece6ae;
+    margin-left: 10px;
+}
+.footer-right .formulario .buttom:hover{
+    background-color: #c5c3ad;
+    transition: 0.5s;
+    color: #363535;
+    
+
+}
+footer .social-icons{
+    width: 100%;
+    padding: 20px;
+}
+.social-icons .icons{
+    display: flex;
+    justify-content: center;
+}
+.social-icons .icons .icon{
+    width: 20px;
+   
+}
+.social-icons .icons .icon img{
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.social-icons .derechos{
+    text-align: center;
+}
+.social-icons .derechos h2{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 20px;
+}
+@media (max-width: 670px) {
+    .barra-de-navegacion{
+        justify-content: space-between;
+    }
+    .barra-de-navegacion .logo-menu{
+        display: block;
+        padding: 10px;
+    }
+    
+    .barra-de-navegacion .title-logo{
+        display: block;
+        
+    }
+
+    .barra-de-navegacion .title-logo h2{
+        color: rgb(247, 245, 227);
+        font-weight: 400;
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 670px){
+    .list-items .items{
+        display: none;
+    }
+    .barra-de-navegacion .secion{
+        display: none;
+    }
+
+}
+@media (max-width: 900px) {
+    .section-principal h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 700px) {
+    .section-principal h1{
+        font-size: 2.8rem;
+    }
+}
+@media (max-width: 600px) {
+    .section-principal h1{
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 500px){
+   
+    .section-principal p{
+        font-size: 1.5rem;
+    }
+    .section-principal a{
+        font-size: 1.5rem;
+        left: calc(50% - 65px);
+    }
+    
+}
+    
+@media (max-width: 900px) {
+    .section-imagen .title{
+        display: none;
+    }
+ 
+}
+
+@media (max-width: 700px) {
+    .section-producto .slide .elemento{
+        flex: 0 0 auto;
+        margin: 0 15px;
+        width: 230px;
+        height: auto;
+    
+    }
+    
+}
+@media (max-width: 500px) {
+    .section-producto .slide .elemento{
+        flex: 0 0 auto;
+        margin: 0 15px;
+        width: 210px;
+        height: auto;
+    
+    }
+    
+}
+
+
+@media (max-width: 900px) {
+    main .image-fondo{
+        width: 100%;
+        height: 30rem;
+    }
+    main .image-fondo{
+        background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/Custom_Block_Banners_Empaque_para_Regalo_marzo_1770x.jpg?v=1678967548');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    
+}
+
+@media (max-width: 700px) {
+       main .image-fondo{
+        width: 100%;
+        height: 30rem;
+    }
+    main .image-fondo{
+        background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/Custom_Block_Banners_Empaque_para_Regalo_marzo_1770x.jpg?v=1678967548');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+@media (max-width: 900px) {
+    main .imagen-descuento{
+        width: 100%;
+        height: 30rem;
+    }
+    main .imagen-descuento{
+        background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/Custom_Block_Banners_dulce_encanto_accesorios-rebajas_mar9_1880x.jpg?v=1678359724');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    
+}
+@media (max-width: 700px) {
+       main .imagen-descuento{
+        width: 100%;
+        height: 30rem;
+    }
+    main .imagen-descuento{
+        background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/Custom_Block_Banners_dulce_encanto_accesorios-rebajas_mar9_1880x.jpg?v=1678359724');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 900px) {
+    main .imagen-arete{
+        width: 100%;
+        height: 30rem;
+    }
+    main .imagen-arete{
+        background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/bn-ppl-desktop-dulce-encanto_2_marz19_1880x.jpg?v=1679233209');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    
+}
+@media (max-width: 700px) {
+       main .imagen-arete{
+        width: 100%;
+        height: 30rem;
+    }
+    main .imagen-arete{
+        background-image: url('https://cdn.shopify.com/s/files/1/0602/0884/0870/files/bn-ppl-desktop-dulce-encanto_2_marz19_1880x.jpg?v=1679233209');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
